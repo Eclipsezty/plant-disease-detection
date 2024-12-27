@@ -1,0 +1,13 @@
+#Mon Jan 30 17:07:08 CST 2023
+path.3=1/classes.dex
+path.2=13/classes.dex
+path.1=0/classes.dex
+path.0=classes.dex
+base.3=F\:\\Study\\Grade4\\FYP\\Working\\Android-python-socket-master\\Android\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\1\\classes.dex
+base.2=F\:\\Study\\Grade4\\FYP\\Working\\Android-python-socket-master\\Android\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\13\\classes.dex
+base.1=F\:\\Study\\Grade4\\FYP\\Working\\Android-python-socket-master\\Android\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+base.0=F\:\\Study\\Grade4\\FYP\\Working\\Android-python-socket-master\\Android\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
