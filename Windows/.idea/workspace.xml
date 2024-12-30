@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c893b6e8-1d37-475d-ac8e-a5383c71f9ea" name="Changes" comment="Add get phone number function" />
+    <list default="true" id="c893b6e8-1d37-475d-ac8e-a5383c71f9ea" name="Changes" comment="Add get phone number function">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -357,7 +359,7 @@
       <workItem from="1731203313915" duration="976000" />
       <workItem from="1735264868564" duration="1181000" />
       <workItem from="1735266830965" duration="6868000" />
-      <workItem from="1735287800278" duration="3564000" />
+      <workItem from="1735287800278" duration="4779000" />
     </task>
     <task id="LOCAL-00001" summary="Updated to rice dataset">
       <created>1719027445162</created>
