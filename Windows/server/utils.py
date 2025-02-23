@@ -13,17 +13,42 @@ def decode_image(image_data_str):
 
 # 解析数据
 def parse_data(base64_data):
+    """解析数据：图片数据|GPS数据|电话号码|面积"""
     try:
-        image_data_str, gps_data_str, phone_number = base64_data.split('|')
-        latitude, longitude = gps_data_str.split(',')
-        latitude = float(latitude)
-        longitude = float(longitude)
-        print(f"Received GPS location - Latitude: {latitude}, Longitude: {longitude}")
+        parts = base64_data.split('|')
+        if len(parts) != 4:
+            print("Error: Invalid data format")
+            return None, None, "Unknown", 0
+            
+        image_data_str, gps_data_str, phone_number, area_str = parts
+        
+        # 解析GPS数据
+        try:
+            latitude, longitude = gps_data_str.split(',')
+            latitude = float(latitude)
+            longitude = float(longitude)
+            print(f"Received GPS location - Latitude: {latitude}, Longitude: {longitude}")
+        except ValueError:
+            print("Error parsing GPS data")
+            gps_data_str = "0.0,0.0"
+            
+        # 解析面积数据
+        try:
+            area = float(area_str)
+            if area < 0.1 or area > 100:
+                print("Warning: Area out of valid range")
+                area = max(min(area, 100), 0.1)
+        except ValueError:
+            print("Error parsing area data")
+            area = 0
+            
         print(f"Received Phone Number: {phone_number}")
-        return image_data_str, gps_data_str, phone_number
-    except ValueError:
-        print("Error parsing data")
-        return None, None, "Unknown"
+        print(f"Received Area: {area}")
+        
+        return image_data_str, gps_data_str, phone_number, area
+    except Exception as e:
+        print(f"Error parsing data: {str(e)}")
+        return None, None, "Unknown", 0
 
 # 保存图像
 def save_image(im):
