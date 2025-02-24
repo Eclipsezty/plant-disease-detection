@@ -6,120 +6,121 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="29"
-8-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml
-9        android:targetSdkVersion="32" />
-9-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml
+8-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:6:5-67
-11-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:6:22-64
+11-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:6:5-67
+11-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:6:22-64
 12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-12-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:7:5-79
-12-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:7:22-76
+12-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:7:5-79
+12-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:7:22-76
 13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-13-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:8:5-81
-13-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:8:22-78
+13-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:8:5-81
+13-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:8:22-78
 14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-14-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:9:5-75
-14-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:9:22-72
+14-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:9:5-75
+14-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:9:22-72
 15    <uses-permission android:name="android.permission.READ_SMS" />
-15-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:10:5-67
-15-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:10:22-64
+15-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:10:5-67
+15-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:10:22-64
 16    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
-16-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:11:5-77
-16-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:11:22-74
+16-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:11:5-77
+16-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:11:22-74
 17
 18    <application
-18-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:16:5-53:19
+18-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:16:5-53:19
 19        android:allowBackup="true"
-19-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:17:9-35
+19-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:17:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.5.0] C:\Users\14911\.gradle\caches\transforms-3\a1605265a276ccaf05dba118648041ac\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+20-->[androidx.core:core:1.5.0] C:\Users\14911\.gradle\caches\transforms-3\d7944380c443ba4df2b5f0d083e74a73\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:icon="@mipmap/icon"
-23-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:18:9-36
+23-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:18:9-36
 24        android:label="@string/app_name"
-24-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:19:9-41
+24-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:19:9-41
 25        android:roundIcon="@mipmap/icon"
-25-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:20:9-41
+25-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:20:9-41
 26        android:supportsRtl="true"
-26-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:21:9-35
-27        android:theme="@style/Theme.Android" >
-27-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:22:9-45
-28        <activity
-28-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:23:9-25:40
-29            android:name="com.example.android.LoginActivity"
-29-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:24:13-42
-30            android:exported="false" />
-30-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:25:13-37
-31        <activity
-31-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:26:9-28:40
-32            android:name="com.example.android.MenuActivity"
-32-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:27:13-41
-33            android:exported="false" />
-33-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:28:13-37
-34        <activity
-34-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:29:9-31:40
-35            android:name="com.example.android.GetValue"
-35-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:30:13-37
-36            android:exported="false" />
-36-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:31:13-37
-37        <activity
-37-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:32:9-40:20
-38            android:name="com.example.android.SplashActivity"
-38-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:33:13-43
-39            android:exported="true" >
-39-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:34:13-36
-40            <intent-filter>
-40-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:35:13-39:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:36:17-69
-41-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:36:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:38:17-77
-43-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:38:27-74
-44            </intent-filter>
-45        </activity> <!-- <activity android:name=".GetValue" -->
-46        <!-- tools:ignore="DuplicateActivity" /> -->
-47        <activity android:name="com.example.android.DiseaseDetectActivity" />
-47-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:42:9-59
-47-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:42:19-56
-48
-49        <provider
-49-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:44:9-52:20
-50            android:name="androidx.core.content.FileProvider"
-50-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:45:13-62
-51            android:authorities="com.example.android.fileprovider"
-51-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:46:13-67
-52            android:exported="false"
-52-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:47:13-37
-53            android:grantUriPermissions="true" >
-53-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:48:13-47
-54            <meta-data
-54-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:49:13-51:54
-55                android:name="android.support.FILE_PROVIDER_PATHS"
-55-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:50:17-67
-56                android:resource="@xml/file_paths" />
-56-->F:\Study\Grade4\FYP\Working\Android-python-socket-master\Android\app\src\main\AndroidManifest.xml:51:17-51
-57        </provider>
-58
-59        <activity
-59-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\14911\.gradle\caches\transforms-3\ffe70ef51fdfc11e12725c673ccb85be\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-60            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-60-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\14911\.gradle\caches\transforms-3\ffe70ef51fdfc11e12725c673ccb85be\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-61            android:exported="false"
-61-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\14911\.gradle\caches\transforms-3\ffe70ef51fdfc11e12725c673ccb85be\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-62            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-62-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\14911\.gradle\caches\transforms-3\ffe70ef51fdfc11e12725c673ccb85be\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-63
-64        <meta-data
-64-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\14911\.gradle\caches\transforms-3\26d9a639564b428ed238f08f71cfefe7\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
-65            android:name="com.google.android.gms.version"
-65-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\14911\.gradle\caches\transforms-3\26d9a639564b428ed238f08f71cfefe7\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
-66            android:value="@integer/google_play_services_version" />
-66-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\14911\.gradle\caches\transforms-3\26d9a639564b428ed238f08f71cfefe7\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
-67    </application>
-68
-69</manifest>
+26-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:21:9-35
+27        android:testOnly="true"
+28        android:theme="@style/Theme.Android" >
+28-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:22:9-45
+29        <activity
+29-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:23:9-25:40
+30            android:name="com.example.android.LoginActivity"
+30-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:24:13-42
+31            android:exported="false" />
+31-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:25:13-37
+32        <activity
+32-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:26:9-28:40
+33            android:name="com.example.android.MenuActivity"
+33-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:27:13-41
+34            android:exported="false" />
+34-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:28:13-37
+35        <activity
+35-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:29:9-31:40
+36            android:name="com.example.android.GetValue"
+36-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:30:13-37
+37            android:exported="false" />
+37-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:31:13-37
+38        <activity
+38-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:32:9-40:20
+39            android:name="com.example.android.SplashActivity"
+39-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:33:13-43
+40            android:exported="true" >
+40-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:34:13-36
+41            <intent-filter>
+41-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:35:13-39:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:36:17-69
+42-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:36:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:38:17-77
+44-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:38:27-74
+45            </intent-filter>
+46        </activity> <!-- <activity android:name=".GetValue" -->
+47        <!-- tools:ignore="DuplicateActivity" /> -->
+48        <activity android:name="com.example.android.DiseaseDetectActivity" />
+48-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:42:9-59
+48-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:42:19-56
+49
+50        <provider
+50-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:44:9-52:20
+51            android:name="androidx.core.content.FileProvider"
+51-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:45:13-62
+52            android:authorities="com.example.android.fileprovider"
+52-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:46:13-67
+53            android:exported="false"
+53-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:47:13-37
+54            android:grantUriPermissions="true" >
+54-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:48:13-47
+55            <meta-data
+55-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:49:13-51:54
+56                android:name="android.support.FILE_PROVIDER_PATHS"
+56-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:50:17-67
+57                android:resource="@xml/file_paths" />
+57-->F:\Research\CAMIC\Plant Disease Detection\Android\app\src\main\AndroidManifest.xml:51:17-51
+58        </provider>
+59
+60        <activity
+60-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\14911\.gradle\caches\transforms-3\7333f78a75c72c79994b61b29e132d06\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+61            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+61-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\14911\.gradle\caches\transforms-3\7333f78a75c72c79994b61b29e132d06\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+62            android:exported="false"
+62-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\14911\.gradle\caches\transforms-3\7333f78a75c72c79994b61b29e132d06\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+63            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+63-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\14911\.gradle\caches\transforms-3\7333f78a75c72c79994b61b29e132d06\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+64
+65        <meta-data
+65-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\14911\.gradle\caches\transforms-3\bb2bafd2befdb93482839ef2588ad5f3\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+66            android:name="com.google.android.gms.version"
+66-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\14911\.gradle\caches\transforms-3\bb2bafd2befdb93482839ef2588ad5f3\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+67            android:value="@integer/google_play_services_version" />
+67-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\14911\.gradle\caches\transforms-3\bb2bafd2befdb93482839ef2588ad5f3\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+68    </application>
+69
+70</manifest>

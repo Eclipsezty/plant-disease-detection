@@ -20,6 +20,7 @@
     <color name="green_200">#C8FEC8</color>
     <color name="green_500">#00CD66</color>
     <color name="green_700">#008B45</color>
+    <color name="grey_500">#BFBFBF</color>
     <color name="grey_text">#FF363636</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>

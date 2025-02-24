@@ -6,6 +6,7 @@ color black
 color green_200
 color green_500
 color green_700
+color grey_500
 color grey_text
 color teal_200
 color teal_700
@@ -31,6 +32,8 @@ drawable sign_button
 drawable underline
 drawable white_bg
 id analysis
+id area_input
+id back_button
 id button_login
 id capture
 id configNet
@@ -49,6 +52,7 @@ id guidelineLeft
 id guidelineRight
 id health
 id img_photo
+id input_overlay
 id instant
 id ip
 id logo
@@ -59,6 +63,7 @@ id over
 id port
 id reminder
 id replyMsg
+id send_button
 id textView
 id textView2
 id textView3

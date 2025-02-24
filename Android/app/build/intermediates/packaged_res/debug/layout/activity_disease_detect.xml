@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.05" /> <!-- Move this guideline to adjust the left margin -->
+        app:layout_constraintGuide_percent="0.05" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineRight"
@@ -35,28 +35,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.95" />
-
-<!--    <ImageView-->
-<!--        android:id="@+id/img_photo"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintBottom_toTopOf="@id/capture"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/replyMsg" />-->
-<!--        &lt;!&ndash;tools:ignore="MissingConstraints"&ndash;&gt;-->
-<!--        />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/img_photo"-->
-<!--        android:layout_width="450dp"-->
-<!--        android:layout_height="450dp"-->
-<!--        app:layout_constraintBottom_toTopOf="@id/capture"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/replyMsg" />-->
-<!--    &lt;!&ndash;tools:ignore="MissingConstraints"&ndash;&gt;-->
-<!--    />-->
 
 
     <ImageView
@@ -70,45 +48,43 @@
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/replyMsg" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/img_photo"-->
-<!--        android:layout_width="200dp" -->
-<!--        android:layout_height="200dp"  &lt;!&ndash; Fixed height &ndash;&gt;-->
-<!--        android:src="@mipmap/sample_leaf"-->
-<!--        android:scaleType="centerCrop"  &lt;!&ndash; This ensures the image is scaled to fill the bounds, while maintaining its aspect ratio &ndash;&gt;-->
-<!--        app:layout_constraintBottom_toTopOf="@id/capture"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/replyMsg" />-->
 
 
-
+<!--    <TextView-->
+<!--        android:id="@+id/replyMsg"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/green_200"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/grey_text"-->
+<!--        android:textSize="20sp"-->
+<!--        android:padding="10sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0"-->
+<!--        tools:layout_editor_absoluteX="0dp" />-->
     <TextView
         android:id="@+id/replyMsg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/green_200"
-        android:gravity="center"
+        android:gravity="start|top"
         android:textColor="@color/grey_text"
         android:textSize="20sp"
         android:padding="10sp"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:maxLines="10"
+        android:minLines="3"
+        android:scrollbars="vertical"
+        android:breakStrategy="simple"
+        android:ellipsize="none"
+        android:overScrollMode="always"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0"
         tools:layout_editor_absoluteX="0dp" />
 
-<!--    <ImageButton-->
-<!--        android:id="@+id/capture"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:src="@mipmap/icon_camera"-->
-<!--        android:scaleX="0.8"-->
-<!--        android:scaleY="0.8"-->
-<!--        android:scaleType="fitCenter"-->
-<!--        android:adjustViewBounds="true"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/guideline0" />-->
 
 
     <ImageButton
@@ -138,5 +114,136 @@
         app:layout_constraintStart_toEndOf="@+id/capture"
         app:layout_constraintTop_toTopOf="@+id/guideline0"
         app:layout_constraintVertical_bias="0.5" />
+    <!-- 新增：输入面积的EditText，默认隐藏 -->
+<!--    <EditText-->
+<!--        android:id="@+id/area_input"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="请输入受影响的作物面积（亩）"-->
+<!--        android:inputType="numberDecimal"-->
+<!--        android:padding="10dp"-->
+<!--        android:textSize="18sp"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/guideline2"-->
+<!--        app:layout_constraintStart_toStartOf="@id/guidelineLeft"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/guidelineRight" />-->
 
+
+<!--    &lt;!&ndash; 新增：返回按钮，默认隐藏 &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/back_button"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="返回"-->
+<!--        android:background="@color/grey_500"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:padding="10dp"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/send_button"-->
+<!--        app:layout_constraintStart_toStartOf="@id/guidelineLeft"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/guidelineRight" />-->
+
+<!--    &lt;!&ndash; 输入受影响面积的输入框 &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/area_input"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="请输入受影响的作物面积（亩）"-->
+<!--        android:inputType="numberDecimal"-->
+<!--        android:padding="10dp"-->
+<!--        android:textSize="18sp"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/img_photo"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"/>-->
+
+<!--    &lt;!&ndash; 发送按钮 &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/send_button"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="发送"-->
+<!--        android:background="@color/green_500"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:padding="10dp"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/area_input"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"/>-->
+
+<!--    &lt;!&ndash; 返回按钮 &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/back_button"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="返回"-->
+<!--        android:background="@color/grey_500"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:padding="10dp"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/send_button"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"/>-->
+
+    <!-- 🌟 新增：输入界面的弹窗容器 -->
+    <FrameLayout
+        android:id="@+id/input_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:elevation="10dp"
+            android:layout_margin="30dp"
+            android:layout_centerInParent="true">
+
+            <!-- 输入框 -->
+            <EditText
+                android:id="@+id/area_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入受影响的作物面积（亩）"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                android:background="@android:color/white"
+                android:textSize="18sp"/>
+
+            <!-- 按钮容器 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/send_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="发送"
+                    android:backgroundTint="@color/green_500"
+                    android:textColor="@android:color/white"
+                    android:padding="10dp"/>
+
+                <Button
+                    android:id="@+id/back_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="返回"
+                    android:backgroundTint="@color/grey_500"
+                    android:textColor="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_marginStart="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

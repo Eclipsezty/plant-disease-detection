@@ -1081,6 +1081,7 @@ color foreground_material_light
 color green_200
 color green_500
 color green_700
+color grey_500
 color grey_text
 color highlighted_text_material_dark
 color highlighted_text_material_light
@@ -1876,12 +1877,14 @@ id analysis
 id animateToEnd
 id animateToStart
 id arc
+id area_input
 id asConfigured
 id async
 id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back_button
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -2012,6 +2015,7 @@ id ignoreRequest
 id image
 id img_photo
 id info
+id input_overlay
 id instant
 id invisible
 id inward
@@ -2157,6 +2161,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id send_button
 id shortcut
 id showCustom
 id showHome
