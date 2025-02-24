@@ -11,7 +11,7 @@ import os
 from medicine_handler import get_medicine_recommendation
 
 # 定义服务器地址和端口
-address = ('192.168.101.16', 6666)
+address = ('192.168.4.50', 6666)
 
 # 创建全局锁对象，用于保护对共享资源（如文件）的访问
 file_lock = threading.Lock()
@@ -46,11 +46,13 @@ def handle_client(tcpClient, addr):
     # 根据预测结果生成响应信息
     if confidence < 60:
         result = "无法识别，请重新拍照"
+        medicine, dosage = "无推荐", 0  # 添加默认值，避免变量未定义
     else:
         # 获取药物推荐
         medicine, dosage = get_medicine_recommendation(predicted_class, area)
         cn_disease = translate_CN(predicted_class)
-        result = f"检测结果：{cn_disease}\n置信度：{confidence}%\n建议购买农药：{medicine}\n建议使用剂量：{dosage}ml"
+        # result = f"检测结果：{cn_disease}\n置信度：{confidence}%\n建议购买农药：{medicine}\n建议使用剂量：{dosage}ml"
+        result = f"检测结果：{cn_disease}\n置信度：{format(confidence, '.2f')}%\n建议购买农药：{medicine}\n建议使用剂量：{dosage}ml"
 
     print(result)
 

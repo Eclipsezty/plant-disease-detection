@@ -37,7 +37,7 @@ def parse_data(base64_data):
             area = float(area_str)
             if area < 0.1 or area > 100:
                 print("Warning: Area out of valid range")
-                area = max(min(area, 100), 0.1)
+                area = max(min(area, 10000), 0.0)
         except ValueError:
             print("Error parsing area data")
             area = 0
