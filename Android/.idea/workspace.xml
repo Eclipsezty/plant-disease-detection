@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ad2994b2-b980-4b69-9524-fd20a3b975b1" name="Changes" comment="Alter config">
       <change beforePath="$PROJECT_DIR$/../Windows/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Windows/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Windows/server/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Windows/server/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Windows/server/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Windows/server/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740287532835</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Alter config">
+      <created>1740438848993</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1740438848993</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

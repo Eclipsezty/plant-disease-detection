@@ -183,7 +183,6 @@ public class DiseaseDetectActivity extends AppCompatActivity {
     }
 
 
-
     private void getLocation() {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
@@ -228,19 +227,6 @@ public class DiseaseDetectActivity extends AppCompatActivity {
     findViewById(R.id.input_overlay).setVisibility(View.VISIBLE);
 }
 
-    // 隐藏输入弹窗
-//    private void hideInputOverlay() {
-////        findViewById(R.id.input_overlay).setVisibility(View.GONE);
-//        runOnUiThread(() -> {
-//            Log.d("Overlay", "隐藏输入弹窗");
-//            areaInput.setVisibility(View.GONE);
-//            sendButton.setVisibility(View.GONE);
-//            backButton.setVisibility(View.GONE);
-//            capture.setVisibility(View.VISIBLE);
-//            openAlbum.setVisibility(View.VISIBLE);
-//        });
-//    }
-
     private void hideInputOverlay() {
         runOnUiThread(() -> {
             Log.d("Overlay", "隐藏输入弹窗");
@@ -249,15 +235,8 @@ public class DiseaseDetectActivity extends AppCompatActivity {
             View inputOverlay = findViewById(R.id.input_overlay);
             if (inputOverlay != null) {
                 inputOverlay.setVisibility(View.GONE);
-//                ((ViewGroup) inputOverlay.getParent()).removeView(inputOverlay);
             }
-//            inputOverlay.setVisibility(View.GONE);
 
-
-            // 其他 UI 控件恢复可见性
-//            areaInput.setVisibility(View.GONE);
-//            sendButton.setVisibility(View.GONE);
-//            backButton.setVisibility(View.GONE);
             areaInput.setText("");
 
             capture.setVisibility(View.VISIBLE);
@@ -272,16 +251,6 @@ public class DiseaseDetectActivity extends AppCompatActivity {
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
     }
-//private void closeKeyboard() {
-//    View view = this.getCurrentFocus();
-//    if (view != null) {
-//        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-//        if (imm != null) {
-//            imm.hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
-//        }
-//    }
-//}
-
 
     private void initEvent() {
         // 拍照按钮点击事件
@@ -348,8 +317,7 @@ public class DiseaseDetectActivity extends AppCompatActivity {
 
                 // 3. 发送数据
                 hideInputOverlay();
-
-                startNetThreadWithLocation();  // 不再使用 sendDataToServer
+                startNetThreadWithLocation();
             }
         });
 
@@ -358,16 +326,10 @@ public class DiseaseDetectActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //                // 恢复初始界面
-//                areaInput.setVisibility(View.GONE);
-//                sendButton.setVisibility(View.GONE);
-//                backButton.setVisibility(View.GONE);
-//                capture.setVisibility(View.VISIBLE);
-//                openAlbum.setVisibility(View.VISIBLE);
                 hideInputOverlay();
             }
         });
     }
-
 
 
 
@@ -392,8 +354,6 @@ public class DiseaseDetectActivity extends AppCompatActivity {
             }
         }
     }
-
-
 
     public static String bitmapToBase64(Bitmap bitmap) {
         String result = null;
@@ -526,21 +486,6 @@ public class DiseaseDetectActivity extends AppCompatActivity {
     private void startNetThreadWithLocation() {
         replyMsg.setText("检测中...");
 
-//        // 获取面积输入
-//        String areaText = areaInput.getText().toString().trim();
-//        if (areaText.isEmpty()) {
-//            Toast.makeText(this, "请输入受影响的作物面积", Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//
-////        float affectedArea;
-//        try {
-//            affectedArea = Float.parseFloat(areaText);
-//        } catch (NumberFormatException e) {
-//            Toast.makeText(this, "请输入有效的面积数值", Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-
         final float finalAffectedArea = affectedArea;
 
         new Thread() {
@@ -576,10 +521,7 @@ public class DiseaseDetectActivity extends AppCompatActivity {
 
                     socket.shutdownOutput();
 
-//                    // 读取服务器响应
-//                    BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream(), "UTF-8"));
-//                    String content = br.readLine();
-//                    Log.d("NetworkThread", "Received content: " + content);
+                    // 读取服务器响应
                     BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream(), "UTF-8"));
                     StringBuilder contentBuilder = new StringBuilder();
                     String line;
@@ -609,88 +551,6 @@ public class DiseaseDetectActivity extends AppCompatActivity {
         }.start();
     }
 
-
-
-    // 主线程创建消息处理器
-//    Handler handler = new Handler() {
-//        // 但有新消息时调用
-//        @Override
-//        public void handleMessage(Message msg) {
-//            if (msg.what == UPDATE_UI) {
-//                // Check if msg.obj is not null before calling .equals
-//                if (msg.obj != null && msg.obj.equals("0")) {
-//                    replyMsg.setText("*****");
-//                } else if (msg.obj != null) {
-//                    String content = (String) msg.obj;
-//                    replyMsg.setText(content);
-//                } else {
-//                    // Handle the case where msg.obj is null
-//                    replyMsg.setText("No response from server");
-//                    Log.e("HandlerError", "msg.obj is null");
-//                }
-//            } else if (msg.what == ERROR) {
-//                Toast.makeText(getApplicationContext(), "*****", Toast.LENGTH_LONG).show();
-//            } else if (msg.what == UPDATE_ok) {
-//                Toast.makeText(getApplicationContext(), "开始检测", Toast.LENGTH_LONG).show();
-//            }
-//        }
-//
-//    };
-//    Handler handler = new Handler(Looper.getMainLooper()) {
-//        @Override
-//        public void handleMessage(Message msg) {
-//            if (msg.what == UPDATE_UI) {
-//                if (msg.obj != null) {
-//                    String content = (String) msg.obj;
-//
-//                    // 按换行符拆分返回结果
-//                    String[] lines = content.split("\n");
-//
-//                    StringBuilder displayText = new StringBuilder();
-//
-//                    // 遍历每一行，拼接显示结果
-//                    for (String line : lines) {
-//                        if (line.contains("检测结果") || line.contains("置信度") || line.contains("建议购买农药") || line.contains("建议使用剂量")) {
-//                            displayText.append(line).append("\n");
-//                        }
-//                    }
-//
-//                    // 将处理后的结果显示在 TextView 中
-//                    replyMsg.setText(displayText.toString().trim());
-//
-//                } else {
-//                    replyMsg.setText("未收到服务器响应");
-//                }
-//            } else if (msg.what == ERROR) {
-//                Toast.makeText(getApplicationContext(), "检测失败，请重试。", Toast.LENGTH_LONG).show();
-//            } else if (msg.what == UPDATE_ok) {
-//                Toast.makeText(getApplicationContext(), "开始检测", Toast.LENGTH_LONG).show();
-//            }
-//        }
-//    };
-
-//    Handler handler = new Handler(Looper.getMainLooper()) {
-//        @Override
-//        public void handleMessage(Message msg) {
-//            if (msg.what == UPDATE_UI) {
-//                if (msg.obj != null) {
-//                    String content = (String) msg.obj;
-//
-//                    // 直接将服务器返回的完整内容显示在 TextView 中
-//                    replyMsg.setText(content);
-//
-//                } else {
-//                    replyMsg.setText("未收到服务器响应");
-//                }
-//            } else if (msg.what == ERROR) {
-//                Toast.makeText(getApplicationContext(), "检测失败，请重试。", Toast.LENGTH_LONG).show();
-//            } else if (msg.what == UPDATE_ok) {
-//                Toast.makeText(getApplicationContext(), "开始检测", Toast.LENGTH_LONG).show();
-//            }
-//        }
-//    };
-
-
     Handler handler = new Handler(Looper.getMainLooper()) {
         @Override
         public void handleMessage(Message msg) {
@@ -717,9 +577,4 @@ public class DiseaseDetectActivity extends AppCompatActivity {
             }
         }
     };
-
-
-
-
 }
-
