@@ -1,9 +1,22 @@
-# 配置文件，存储常量、路径等
-MODEL_PATH_1 = "F:/Study/FYP/training/models/Rice-InceptionResNetV2_NoPool_e30.h5"
-MODEL_PATH_2 = "F:/Study/FYP/training/models/Rice-InceptionResNetV2_NoPool_e30.h5"
-IMAGE_PATH = "F:/Study/FYP/training/Image/"
-RESULTS_CSV = "detection_results.csv"
-IMAGE_STORE_PATH = "server/image_store/"
+# # 配置文件，存储常量、路径等
+# MODEL_PATH_1 = "F:/Study/FYP/training/models/Rice-InceptionResNetV2_NoPool_e30.h5"
+# MODEL_PATH_2 = "F:/Study/FYP/training/models/Rice-InceptionResNetV2_NoPool_e30.h5"
+# # IMAGE_PATH = "F:/Study/FYP/training/Image/"
+# RESULTS_CSV = "detection_results.csv"
+# IMAGE_STORE_PATH = "server/image_store/"
+
+
+import os
+
+# 获取当前文件的根目录
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# 相对路径配置
+MODEL_PATH_1 = os.path.join(BASE_DIR, "..", "models", "Rice-InceptionResNetV2_NoPool_e30.h5")
+MODEL_PATH_2 = os.path.join(BASE_DIR, "..", "models", "Rice-InceptionResNetV2_NoPool_e30.h5")
+
+RESULTS_CSV = os.path.join(BASE_DIR, "detection_results.csv")
+IMAGE_STORE_PATH = os.path.join(BASE_DIR, "image_store")
 
 # 不同病害对应的农药推荐
 MEDICINE_RECOMMENDATIONS = {

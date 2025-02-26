@@ -5,13 +5,13 @@ import threading
 import cv2
 
 from utils import decode_image, parse_data, save_image, translate_CN
-from prediction import bi_model_predict
+from prediction import predict
 import tensorflow as tf
 import os
 from medicine_handler import get_medicine_recommendation
 
 # 定义服务器地址和端口
-address = ('192.168.4.50', 6666)
+address = ('0.0.0.0', 6666)
 
 # 创建全局锁对象，用于保护对共享资源（如文件）的访问
 file_lock = threading.Lock()
@@ -41,7 +41,8 @@ def handle_client(tcpClient, addr):
 
     # 调整图像大小并运行模型预测
     TFimg = tf.image.resize(cv2.imread(image_path), [200, 200])
-    predicted_class, confidence = bi_model_predict(TFimg)
+    # predicted_class, confidence = bi_model_predict(TFimg)
+    predicted_class, confidence = predict(TFimg)
 
     # 根据预测结果生成响应信息
     if confidence < 60:
