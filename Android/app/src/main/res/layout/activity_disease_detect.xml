@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="550dp" />
+        app:layout_constraintGuide_begin="600dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -46,6 +46,7 @@
         app:layout_constraintBottom_toTopOf="@id/capture"
         app:layout_constraintEnd_toEndOf="@id/guidelineRight"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        android:layout_marginTop="25dp"
         app:layout_constraintTop_toBottomOf="@+id/replyMsg" />
 
 
@@ -61,7 +62,7 @@
         android:inputType="textMultiLine"
         android:singleLine="false"
         android:maxLines="10"
-        android:minLines="3"
+        android:minLines="1"
         android:scrollbars="vertical"
         android:breakStrategy="simple"
         android:ellipsize="none"

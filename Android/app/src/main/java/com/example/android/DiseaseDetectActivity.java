@@ -71,7 +71,7 @@ public class DiseaseDetectActivity extends AppCompatActivity {
     final int TAKE_PHOTO = 1;
     Uri imageUri;
     File outputImage;
-    public static String ipAddress = "192.168.4.50";
+    public static String ipAddress = "121.43.226.60";
     static int portNumber = 6666;
 
     public static final int REQUEST_CODE_ALBUM = 102; //album
@@ -572,8 +572,8 @@ public class DiseaseDetectActivity extends AppCompatActivity {
                 Log.e("Error", "检测失败，请重试。");
                 Toast.makeText(getApplicationContext(), "检测失败，请重试。", Toast.LENGTH_LONG).show();
             } else if (msg.what == UPDATE_ok) {
-                Log.i("Update", "开始检测");
-                Toast.makeText(getApplicationContext(), "开始检测", Toast.LENGTH_LONG).show();
+                Log.i("Update", "开始检测，请稍等");
+                Toast.makeText(getApplicationContext(), "开始检测，请稍等", Toast.LENGTH_LONG).show();
             }
         }
     };

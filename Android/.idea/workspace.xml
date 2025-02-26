@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad2994b2-b980-4b69-9524-fd20a3b975b1" name="Changes" comment="Alter config">
-      <change beforePath="$PROJECT_DIR$/../Windows/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Windows/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ad2994b2-b980-4b69-9524-fd20a3b975b1" name="Changes" comment="Adjust disease detect UI" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -277,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740438848993</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Adjust disease detect UI">
+      <created>1740571838168</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1740571838168</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,6 +309,7 @@
     <MESSAGE value="Add location feature" />
     <MESSAGE value="Add phone number feature" />
     <MESSAGE value="Alter config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alter config" />
+    <MESSAGE value="Adjust disease detect UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjust disease detect UI" />
   </component>
 </project>

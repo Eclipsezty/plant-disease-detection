@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="550dp" />
+        app:layout_constraintGuide_begin="600dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -46,23 +46,10 @@
         app:layout_constraintBottom_toTopOf="@id/capture"
         app:layout_constraintEnd_toEndOf="@id/guidelineRight"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        android:layout_marginTop="25dp"
         app:layout_constraintTop_toBottomOf="@+id/replyMsg" />
 
 
-
-<!--    <TextView-->
-<!--        android:id="@+id/replyMsg"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:background="@color/green_200"-->
-<!--        android:gravity="center"-->
-<!--        android:textColor="@color/grey_text"-->
-<!--        android:textSize="20sp"-->
-<!--        android:padding="10sp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0"-->
-<!--        tools:layout_editor_absoluteX="0dp" />-->
     <TextView
         android:id="@+id/replyMsg"
         android:layout_width="match_parent"
@@ -75,7 +62,7 @@
         android:inputType="textMultiLine"
         android:singleLine="false"
         android:maxLines="10"
-        android:minLines="3"
+        android:minLines="1"
         android:scrollbars="vertical"
         android:breakStrategy="simple"
         android:ellipsize="none"
@@ -114,78 +101,8 @@
         app:layout_constraintStart_toEndOf="@+id/capture"
         app:layout_constraintTop_toTopOf="@+id/guideline0"
         app:layout_constraintVertical_bias="0.5" />
-    <!-- 新增：输入面积的EditText，默认隐藏 -->
-<!--    <EditText-->
-<!--        android:id="@+id/area_input"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:hint="请输入受影响的作物面积（亩）"-->
-<!--        android:inputType="numberDecimal"-->
-<!--        android:padding="10dp"-->
-<!--        android:textSize="18sp"-->
-<!--        android:visibility="gone"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/guideline2"-->
-<!--        app:layout_constraintStart_toStartOf="@id/guidelineLeft"-->
-<!--        app:layout_constraintEnd_toEndOf="@id/guidelineRight" />-->
 
-
-<!--    &lt;!&ndash; 新增：返回按钮，默认隐藏 &ndash;&gt;-->
-<!--    <Button-->
-<!--        android:id="@+id/back_button"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="返回"-->
-<!--        android:background="@color/grey_500"-->
-<!--        android:textColor="@android:color/white"-->
-<!--        android:padding="10dp"-->
-<!--        android:visibility="gone"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/send_button"-->
-<!--        app:layout_constraintStart_toStartOf="@id/guidelineLeft"-->
-<!--        app:layout_constraintEnd_toEndOf="@id/guidelineRight" />-->
-
-<!--    &lt;!&ndash; 输入受影响面积的输入框 &ndash;&gt;-->
-<!--    <EditText-->
-<!--        android:id="@+id/area_input"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:hint="请输入受影响的作物面积（亩）"-->
-<!--        android:inputType="numberDecimal"-->
-<!--        android:padding="10dp"-->
-<!--        android:textSize="18sp"-->
-<!--        android:visibility="gone"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/img_photo"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"/>-->
-
-<!--    &lt;!&ndash; 发送按钮 &ndash;&gt;-->
-<!--    <Button-->
-<!--        android:id="@+id/send_button"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="发送"-->
-<!--        android:background="@color/green_500"-->
-<!--        android:textColor="@android:color/white"-->
-<!--        android:padding="10dp"-->
-<!--        android:visibility="gone"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/area_input"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"/>-->
-
-<!--    &lt;!&ndash; 返回按钮 &ndash;&gt;-->
-<!--    <Button-->
-<!--        android:id="@+id/back_button"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="返回"-->
-<!--        android:background="@color/grey_500"-->
-<!--        android:textColor="@android:color/white"-->
-<!--        android:padding="10dp"-->
-<!--        android:visibility="gone"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/send_button"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"/>-->
-
-    <!-- 🌟 新增：输入界面的弹窗容器 -->
+    <!--  新增：输入界面的弹窗容器 -->
     <FrameLayout
         android:id="@+id/input_overlay"
         android:layout_width="match_parent"
